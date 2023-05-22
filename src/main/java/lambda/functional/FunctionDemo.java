@@ -13,7 +13,10 @@ class FunctionImpl implements Function<String,Integer>{ //<T String is parameter
 
 public class FunctionDemo {
     public static void main(String[] args) {
-        Function<String,Integer> function = new FunctionImpl();
+//        Function<String,Integer> function = new FunctionImpl();
+//        System.out.println(function.apply("mainuddin"));
+
+        Function<String,Integer> function =(String s) -> s.length();
         System.out.println(function.apply("mainuddin"));
     }
 }
