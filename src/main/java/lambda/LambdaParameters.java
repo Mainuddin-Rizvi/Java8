@@ -14,4 +14,12 @@ class Addition implements Addable{
     }
 }
 public class LambdaParameters {
+    public static void main(String[] args) {
+        Addable addition = (a,b)->{
+            return a+b;
+        };
+
+        int result = addition.addition(5, 6);
+        System.out.println(result);
+    }
 }
