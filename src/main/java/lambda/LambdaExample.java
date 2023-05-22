@@ -7,15 +7,18 @@ interface Shape{
 public class LambdaExample {
     public static void main(String[] args) {
         Shape rectangle = ()->System.out.println("Rectangle class draw() method");
-        rectangle.draw();
+        print(rectangle);
 
         Shape circle = ()->System.out.println("Circle class draw() method");
-        circle.draw();
+        print(circle);
 
         Shape square = ()->System.out.println("Square class draw() method");
-        square.draw();
+        print(square);
 
 
+    }
+    public static void print(Shape shape){
+        shape.draw();
     }
 }
 
@@ -27,3 +30,7 @@ public class LambdaExample {
 
 //lambda expression need reference variablew to assign implementation
 //than call abstract method of interface eg. draw()
+
+// passing reference variable with lambda expression into method
+
+
